@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222"
+    android:orientation="horizontal"
+    tools:context=".GameOverActivity">
+
+    <LinearLayout
+        android:id="@+id/leftSection"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/scoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Your Score: 0"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="30dp" />
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"
+            android:visibility="gone"
+            android:textColor="#000000"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:elevation="8dp"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rightSection"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:text="Save"
+            android:visibility="gone"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="#FF5722"
+            android:fontFamily="sans-serif"
+            android:elevation="8dp" />
+
+        <Button
+            android:id="@+id/hiScoreButton"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="View high scores"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="#FF5722"
+            android:fontFamily="sans-serif"
+            android:elevation="8dp" />
+    </LinearLayout>
+</LinearLayout>

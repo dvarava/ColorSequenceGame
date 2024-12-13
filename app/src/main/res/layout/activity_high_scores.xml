@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222">
+
+    <TextView
+        android:id="@+id/highScoresTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignParentStart="true"
+        android:text="HIGH SCORES"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/scrollViewScores"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/highScoresTitle"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_toStartOf="@id/buttonsSection">
+
+        <LinearLayout
+            android:id="@+id/scoresLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp" />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/buttonsSection"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/playAgainButton"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:text="Play Again"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="#FF5722"
+            android:fontFamily="sans-serif"
+            android:elevation="8dp"
+            android:padding="12dp" />
+    </LinearLayout>
+</RelativeLayout>
